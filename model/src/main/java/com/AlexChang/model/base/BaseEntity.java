@@ -34,8 +34,8 @@ public class BaseEntity implements Serializable {
     private Date updateTime;
 
     @TableLogic
-    @TableField("is_delete")
-    private Integer isDelete;
+    @TableField("is_deleted")
+    private Integer isDeleted;
 
     /**
      * @TableField(exist = false) 註解在bean屬性上，表示當前屬性不是數據庫字段，
