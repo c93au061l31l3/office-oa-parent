@@ -3,6 +3,7 @@ package com.AlexChang.auth;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * ClassName:ServiceAuthApplication
@@ -14,7 +15,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
-@MapperScan("com.AlexChang.auth.mapper")
+@ComponentScan("com.AlexChang")
 public class ServiceAuthApplication {
 
     public static void main(String[] args) {
