@@ -2,6 +2,7 @@ package com.AlexChang.auth.controller;
 
 import com.AlexChang.auth.service.SysRoleService;
 
+import com.AlexChang.common.config.exception.CustException;
 import com.AlexChang.common.result.Result;
 import com.AlexChang.model.system.SysRole;
 
@@ -14,10 +15,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -52,6 +50,13 @@ public class SysRoleController {
     public Result findAll(){
 
         List<SysRole> list = sysRoleService.list();
+
+        try {
+            int i = 1/0;
+        }catch (Exception e){
+            throw new CustException(20001,"自訂義異常處理...");
+        }
+
         //統一返回數據結果
         return Result.ok(list);
     }
@@ -81,5 +86,61 @@ public class SysRoleController {
     }
 
     //添加角色
+    @Operation(summary = "添加角色")
+    @PostMapping("/save")
+    public Result save(@RequestBody SysRole role){
+
+        //調用service方法
+        boolean is_success = sysRoleService.save(role);
+        if(is_success){
+            return Result.ok();
+        }else {
+            return Result.fail();
+        }
+    }
+
+    //根據id修改角色
+    @Operation(summary = "根據id修改角色")
+    @PostMapping("/get/{id}")
+    public Result get(@PathVariable Long id){
+        SysRole sysRole = sysRoleService.getById(id);
+        return Result.ok(sysRole);
+    }
+
+    //修改角色-完整版
+    @Operation(summary = "修改角色")
+    @PutMapping("/update")
+    public Result update(@PathVariable SysRole role){
+        boolean is_success = sysRoleService.updateById(role);
+        if(is_success){
+            return Result.ok();
+        }else {
+            return Result.fail();
+        }
+    }
+
+    //根據id刪除
+    @Operation(summary = "根據id刪除")
+    @DeleteMapping("/remove/{id}")
+    public Result remove(@PathVariable Long id){
+        boolean is_success = sysRoleService.removeById(id);
+        if(is_success){
+            return Result.ok();
+        }else {
+            return Result.fail();
+        }
+    }
+
+    //批量刪除
+    @Operation(summary = "批量刪除")
+    @DeleteMapping("/batchRemove")
+    public Result batchRemove(@RequestBody List<Long> idList){
+        boolean is_success = sysRoleService.removeByIds(idList);
+        if(is_success){
+            return Result.ok();
+        }else {
+            return Result.fail();
+        }
+    }
 
 }
