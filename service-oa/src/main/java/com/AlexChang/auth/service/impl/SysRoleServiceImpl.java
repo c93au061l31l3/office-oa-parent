@@ -3,9 +3,12 @@ package com.AlexChang.auth.service.impl;
 import com.AlexChang.auth.mapper.SysRoleMapper;
 import com.AlexChang.auth.service.SysRoleService;
 import com.AlexChang.model.system.SysRole;
+import com.AlexChang.vo.system.AssignRoleVo;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Map;
 
 /**
  * ClassName:SysRoleServiceImpl
@@ -20,4 +23,13 @@ import org.springframework.stereotype.Service;
 public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole> implements SysRoleService {
 
 
+    @Override
+    public Map<String, Object> findRoleDateByUserId(Long userId) {
+        return null;
+    }
+
+    @Override
+    public void doAssign(AssignRoleVo assignRoleVo) {
+
+    }
 }

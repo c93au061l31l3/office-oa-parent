@@ -3,8 +3,8 @@ package com.AlexChang.model.system;
 import com.AlexChang.model.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import java.util.List;
@@ -19,49 +19,60 @@ import java.util.List;
  */
 
 @Data
-@ApiModel(description = "用戶")
+//@ApiModel(description = "用戶")
+@Schema(description = "用戶")
 @TableName("sys_user")
 public class SysUser extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "用戶名")
+    //@ApiModelProperty(value = "用戶名")
+    @Schema(description = "用戶名")
     @TableField("username")
     private String username;
 
-    @ApiModelProperty(value = "密碼")
+    //@ApiModelProperty(value = "密碼")
+    @Schema(description = "密碼")
     @TableField("password")
     private String password;
 
-    @ApiModelProperty(value = "姓名")
+    //@ApiModelProperty(value = "姓名")
+    @Schema(description = "姓名")
     @TableField("name")
     private String name;
 
-    @ApiModelProperty(value = "手機")
+    //@ApiModelProperty(value = "手機")
+    @Schema(description = "手機")
     @TableField("phone")
     private String phone;
 
-    @ApiModelProperty(value = "頭像地址")
+    //@ApiModelProperty(value = "頭像地址")
+    @Schema(description = "頭像地址")
     @TableField("head_url")
     private String headUrl;
 
-    @ApiModelProperty(value = "部門id")
+    //@ApiModelProperty(value = "部門id")
+    @Schema(description = "部門id")
     @TableField("dept_id")
     private Long deptId;
 
-    @ApiModelProperty(value = "職位id")
+    //@ApiModelProperty(value = "職位id")
+    @Schema(description = "職位id")
     @TableField("post_id")
     private Long postId;
 
-    @ApiModelProperty(value = "描述")
+    //@ApiModelProperty(value = "描述")
+    @Schema(description = "描述")
     @TableField("description")
     private String description;
 
-    @ApiModelProperty(value = "openId")
+    //@ApiModelProperty(value = "openId")
+    @Schema(description = "openId")
     @TableField("open_id")
     private String openId;
 
-    @ApiModelProperty(value = "狀態(1:正常 0:停用)")
+    //@ApiModelProperty(value = "狀態(1:正常 0:停用)")
+    @Schema(description = "狀態(1:正常 0:停用)")
     @TableField("status")
     private Integer status;
 

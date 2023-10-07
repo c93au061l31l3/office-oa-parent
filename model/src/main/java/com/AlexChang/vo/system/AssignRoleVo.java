@@ -1,7 +1,7 @@
 package com.AlexChang.vo.system;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 import java.util.List;
@@ -16,12 +16,15 @@ import java.util.List;
  */
 
 @Data
-@ApiModel(description = "分配菜單")
+//@ApiModel(description = "分配菜單")
+@Schema(description = "分配菜單")
 public class AssignRoleVo {
 
-    @ApiModelProperty(value = "用戶id")
+    //@ApiModelProperty(value = "用戶id")
+    @Schema(description = "用戶id")
     private Long userId;
 
-    @ApiModelProperty(value = "角色id列表")
+    //@ApiModelProperty(value = "角色id列表")
+    @Schema(description = "角色id列表")
     private List<Long> roleIdList;
 }

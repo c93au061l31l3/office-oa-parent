@@ -24,7 +24,10 @@ import java.util.Map;
 @RequestMapping("/admin/system/index")
 public class IndexController {
 
-    //Login
+    /**
+     * 登入
+     * @return
+     */
     @PostMapping("login")
     public Result login(){
 
@@ -34,7 +37,10 @@ public class IndexController {
         return Result.ok(map);
     }
 
-    //info
+    /**
+     * 獲取用戶資訊
+     * @return
+     */
     @GetMapping("info")
     public Result info(){
         Map<String, Object> map = new HashMap<>();

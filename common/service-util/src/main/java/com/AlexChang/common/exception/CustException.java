@@ -1,11 +1,7 @@
-package com.AlexChang.common.config.exception;
+package com.AlexChang.common.exception;
 
 import com.AlexChang.common.result.ResultCodeEnum;
-import io.swagger.v3.oas.models.security.SecurityScheme;
 import lombok.Data;
-
-import javax.swing.plaf.basic.BasicTreeUI;
-import java.security.CodeSigner;
 
 /**
  * ClassName:CustException

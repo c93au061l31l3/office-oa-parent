@@ -3,8 +3,7 @@ package com.AlexChang.model.process;
 import com.AlexChang.model.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+
 import lombok.Data;
 
 import java.util.List;
@@ -18,17 +17,17 @@ import java.util.List;
  * @Version:1.0
  */
 @Data
-@ApiModel(description = "ProcessType")
+//@ApiModel(description = "ProcessType")
 @TableName("oa_process_type")
 public class ProcessType extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "类型名称")
+    //@ApiModelProperty(value = "类型名称")
     @TableField("name")
     private String name;
 
-    @ApiModelProperty(value = "描述")
+    //@ApiModelProperty(value = "描述")
     @TableField("description")
     private String description;
 

@@ -1,7 +1,6 @@
 package com.AlexChang.vo.system;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
+
 import lombok.Data;
 
 import java.util.List;
@@ -16,12 +15,12 @@ import java.util.List;
  */
 
 @Data
-@ApiModel(description = "分配菜單")
+//@ApiModel(description = "分配菜單")
 public class AssignMenuVo {
 
-    @ApiModelProperty(value = "角色id")
+    //@ApiModelProperty(value = "角色id")
     private Long roleId;
 
-    @ApiModelProperty(value = "菜單id列表")
+    //@ApiModelProperty(value = "菜單id列表")
     private List<Long> menuIdList;
 }

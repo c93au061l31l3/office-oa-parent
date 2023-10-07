@@ -1,6 +1,6 @@
 package com.AlexChang.vo.system;
 
-import io.swagger.annotations.ApiModelProperty;
+
 import lombok.Data;
 
 /**
@@ -15,7 +15,7 @@ import lombok.Data;
 @Data
 public class SysLoginQueryVo {
 
-    @ApiModelProperty(value = "用戶帳號")
+    //@ApiModelProperty(value = "用戶帳號")
     private String username;
 
     private String createTimeBegin;

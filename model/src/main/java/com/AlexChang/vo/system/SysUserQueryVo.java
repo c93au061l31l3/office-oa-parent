@@ -2,6 +2,8 @@ package com.AlexChang.vo.system;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * ClassName:SysUserQueryVo
  * Description:
@@ -12,7 +14,7 @@ import lombok.Data;
  */
 
 @Data
-public class SysUserQueryVo {
+public class SysUserQueryVo implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

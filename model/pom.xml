@@ -19,8 +19,7 @@
 
     <dependencies>
 
-        <!--lombok用來簡化實體類開發(新版本自帶
-        )-->
+        <!--lombok用來簡化實體類開發(新版本自帶)-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -28,7 +27,7 @@
 
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
             <scope>provided</scope>
         </dependency>
 

@@ -25,7 +25,7 @@ import java.util.List;
 public class TestDemo02 {
 
     @Autowired
-    private SysRoleServiceImpl service;
+    private SysRoleService service;
 
     @Test
     public void getAll(){

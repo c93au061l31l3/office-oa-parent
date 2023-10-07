@@ -1,5 +1,9 @@
 package com.AlexChang.vo.system;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
+import java.io.Serializable;
+
 /**
  * ClassName:SysRoleQueryVo
  * Description:
@@ -10,9 +14,10 @@ package com.AlexChang.vo.system;
  */
 
 //角色查詢實體
-public class SysRoleQueryVo {
+public class SysRoleQueryVo implements Serializable {
 
     private static final long serialVersionUID = 1L;
+
 
     private String roleName;
 

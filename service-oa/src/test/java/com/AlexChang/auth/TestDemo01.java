@@ -35,7 +35,7 @@ public class TestDemo01 {
     public void add(){
 
         SysRole sysRole = new SysRole();
-        sysRole.setRoleName("Hitomi");
+        sysRole.setRoleName("Gura");
         sysRole.setRoleCode("role");
         sysRole.setDescription("admin");
 
@@ -48,10 +48,10 @@ public class TestDemo01 {
     public void update(){
 
         //根據id查詢
-        SysRole sysRole = mapper.selectById(10);
+        SysRole sysRole = mapper.selectById(13);
 
         //設置修改值
-        sysRole.setRoleName("Julia");
+        sysRole.setRoleName("Juliaaa");
 
         //調用方法實現修改
         int i = mapper.updateById(sysRole);
@@ -76,10 +76,17 @@ public class TestDemo01 {
 
         //創建LambdaQueryWrapper對象，調用方法封裝條件
         LambdaQueryWrapper<SysRole> wrapper = new LambdaQueryWrapper<>();
-        wrapper.eq(SysRole::getRoleName,"admin");
+        wrapper.eq(SysRole::getRoleName,"Hitomi");
 
         //調用mp方法實現操作
         List<SysRole> list = mapper.selectList(wrapper);
         System.out.println(list);
     }
+
+
+    @Test
+    public void deleteId(){
+        int i = mapper.deleteById(13);
+    }
+
 }

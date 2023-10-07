@@ -4,11 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69df4e9d-be90-41a5-8652-ec1d2dab512d" name="Changes" comment="0914">
+    <list default="true" id="69df4e9d-be90-41a5-8652-ec1d2dab512d" name="Changes" comment="0916">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/AlexChang/common/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/AlexChang/common/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/AlexChang/common/config/exception/CustException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/AlexChang/common/config/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/process/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/process/Process.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/process/ProcessRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/process/ProcessRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/process/ProcessTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/process/ProcessTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/process/ProcessType.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/process/ProcessType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysDept.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysDept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysLoginLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysLoginLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysOperLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysOperLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysRoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysRoleMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysUserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysUserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/process/ApprovalVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/process/ApprovalVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/process/ProcessFormVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/process/ProcessFormVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/process/ProcessQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/process/ProcessQueryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/process/ProcessVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/process/ProcessVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/AssignMenuVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/AssignMenuVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/AssignRoleVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/AssignRoleVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/SysLoginQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/SysLoginQueryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/SysPostQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/SysPostQueryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/SysRoleQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/SysRoleQueryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/SysUserQueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/SysUserQueryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/controller/SysRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-oa/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/test/java/com/AlexChang/auth/TestDemo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/test/java/com/AlexChang/auth/TestDemo01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/test/java/com/AlexChang/auth/TestDemo02.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/test/java/com/AlexChang/auth/TestDemo02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -69,21 +100,29 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Alex/ideaWorkSpace/javaAtguigu/office-oa-parent/office-oa-parent/model/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;9e8e90fd9deb19ca70adff9666833ee8&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Alex\ideaWorkSpace\javaAtguigu\office-oa-parent\office-oa-parent\model\src\main\resources" />
+      <recent name="D:\Alex\ideaWorkSpace\javaAtguigu\office-oa-parent\office-oa-parent\common\service-util\src\main\java\com\AlexChang\common\exception" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.AlexChang.auth" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ServiceAuthApplication">
-    <configuration name="TestDemo01.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDemo01.deleteId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-oa" />
       <extension name="coverage">
         <pattern>
@@ -93,13 +132,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.AlexChang.auth" />
       <option name="MAIN_CLASS_NAME" value="com.AlexChang.auth.TestDemo01" />
-      <option name="METHOD_NAME" value="add" />
+      <option name="METHOD_NAME" value="deleteId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDemo01.testQuery1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDemo01.testQuery2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-oa" />
       <extension name="coverage">
         <pattern>
@@ -109,7 +148,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.AlexChang.auth" />
       <option name="MAIN_CLASS_NAME" value="com.AlexChang.auth.TestDemo01" />
-      <option name="METHOD_NAME" value="testQuery1" />
+      <option name="METHOD_NAME" value="testQuery2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,6 +189,7 @@
     <configuration name="ServiceAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="service-oa" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.AlexChang.auth.ServiceAuthApplication" />
+      <option name="VM_PARAMETERS" value="--add-opens java.base/java.util=ALL-UNNAMED" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.AlexChang.auth.*" />
@@ -160,13 +200,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.TestDemo01.deleteId" />
+      <item itemvalue="JUnit.TestDemo01.testQuery2" />
+      <item itemvalue="JUnit.TestDemo01.update" />
+      <item itemvalue="JUnit.TestDemo02.getAll" />
+      <item itemvalue="Spring Boot.ServiceAuthApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ServiceAuthApplication" />
         <item itemvalue="JUnit.TestDemo02.getAll" />
-        <item itemvalue="JUnit.TestDemo01.testQuery1" />
+        <item itemvalue="JUnit.TestDemo01.testQuery2" />
+        <item itemvalue="JUnit.TestDemo01.deleteId" />
         <item itemvalue="JUnit.TestDemo01.update" />
-        <item itemvalue="JUnit.TestDemo01.add" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +233,18 @@
       <workItem from="1694593151992" duration="7639000" />
       <workItem from="1694656989716" duration="14969000" />
       <workItem from="1694749794686" duration="6487000" />
-      <workItem from="1694829540219" duration="3523000" />
+      <workItem from="1694829540219" duration="3647000" />
+      <workItem from="1694943223168" duration="374000" />
+      <workItem from="1695002117122" duration="10584000" />
+      <workItem from="1695088895025" duration="1262000" />
+      <workItem from="1695288072299" duration="1048000" />
+      <workItem from="1696163340670" duration="728000" />
+      <workItem from="1696223722266" duration="9751000" />
+      <workItem from="1696298376320" duration="12240000" />
+      <workItem from="1696401553515" duration="3178000" />
+      <workItem from="1696477132158" duration="2448000" />
+      <workItem from="1696567802638" duration="7752000" />
+      <workItem from="1696655216400" duration="15257000" />
     </task>
     <task id="LOCAL-00001" summary="0909">
       <created>1694265985870</created>
@@ -216,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694694811014</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="0916">
+      <created>1694872514102</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694872514102</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +303,7 @@
     <MESSAGE value="0910" />
     <MESSAGE value="0913" />
     <MESSAGE value="0914" />
-    <option name="LAST_COMMIT_MESSAGE" value="0914" />
+    <MESSAGE value="0916" />
+    <option name="LAST_COMMIT_MESSAGE" value="0916" />
   </component>
 </project>

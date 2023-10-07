@@ -1,9 +1,8 @@
-package com.AlexChang.common.config.exception;
+package com.AlexChang.common.exception;
 
 import com.AlexChang.common.result.Result;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**

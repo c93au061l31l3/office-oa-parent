@@ -42,20 +42,21 @@ public class Result<T> {
     }
 
     //成功
-    public static<T> Result<T> ok(){
+    public static <T> Result<T> ok(){
         return Result.build(null,ResultCodeEnum.SUCCESS);
     }
-    public static<T> Result<T> ok(T data){
+    public static <T> Result<T> ok(T data){
         return Result.build(data,ResultCodeEnum.SUCCESS);
     }
 
     //失敗
-    public static<T> Result<T> fail(){
+    public static <T> Result<T> fail(){
         return Result.build(null,ResultCodeEnum.FAIL);
     }
-    public static<T> Result<T> fail(T data){
+    public static <T> Result<T> fail(T data){
         return Result.build(data,ResultCodeEnum.FAIL);
     }
+
     public Result<T> message(String msg){
         this.setMessage(msg);
         return this;
