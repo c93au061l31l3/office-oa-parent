@@ -1,5 +1,7 @@
 package com.AlexChang.vo.system;
 
+import lombok.Data;
+
 import java.util.List;
 
 /**
@@ -12,6 +14,7 @@ import java.util.List;
  */
 
 //路由配置信息
+    @Data
 public class RouterVo {
 
     //路由名字

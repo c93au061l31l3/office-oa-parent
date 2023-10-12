@@ -2,6 +2,7 @@ package com.AlexChang.auth.controller;
 
 import com.AlexChang.auth.service.SysUserService;
 import com.AlexChang.common.result.Result;
+import com.AlexChang.common.utils.MD5;
 import com.AlexChang.model.system.SysUser;
 import com.AlexChang.vo.system.SysUserQueryVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
@@ -77,8 +78,8 @@ public class SysUserController {
     @PostMapping("/save")
     public Result save(@RequestBody SysUser user) {
         //密码进行加密，使用MD5
-        //String passwordMD5 = MD5.encrypt(user.getPassword());
-        //user.setPassword(passwordMD5);
+        String passwordMD5 = MD5.encrypt(user.getPassword());
+        user.setPassword(passwordMD5);
 
 //        String password = user.getPassword();
 //        user.setPassword(password);
@@ -102,6 +103,13 @@ public class SysUserController {
     @DeleteMapping("remove/{id}")
     public Result remove(@PathVariable Long id) {
         service.removeById(id);
+        return Result.ok();
+    }
+
+    @Operation(summary = "更新状态")
+    @GetMapping("updateStatus/{id}/{status}")
+    public Result updateStatus(@PathVariable Long id, @PathVariable Integer status) {
+        service.updateStatus(id,status);
         return Result.ok();
     }
 

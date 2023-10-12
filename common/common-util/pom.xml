@@ -31,6 +31,16 @@
             <scope>provided</scope>
         </dependency>
 
+        <!--
+            報錯 : java.lang.ClassNotFoundException: javax.xml.bind.DatatypeConverter
+            原因 : JAXB API是java EE的API,因此在java SE9.0後不在包含這個jar包。
+        -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.4.0-b180830.0359</version>
+        </dependency>
+
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>

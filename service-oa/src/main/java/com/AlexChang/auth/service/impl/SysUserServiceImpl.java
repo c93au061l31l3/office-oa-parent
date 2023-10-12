@@ -17,4 +17,15 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> implements SysUserService {
+    @Override
+    public void updateStatus(Long id, Integer status) {
+        //根據userid查詢對象
+        SysUser sysUser = baseMapper.selectById(id);
+
+        //設置修改狀態值
+        sysUser.setStatus(status);
+
+        //調用方法進行修改
+        baseMapper.updateById(sysUser);
+    }
 }
