@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69df4e9d-be90-41a5-8652-ec1d2dab512d" name="Changes" comment="1007">
+    <list default="true" id="69df4e9d-be90-41a5-8652-ec1d2dab512d" name="Changes" comment="1012">
+      <change afterPath="$PROJECT_DIR$/common/spring-security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/model/system/SysMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/AssignMenuVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/AssignMenuVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/RouterVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/model/src/main/java/com/AlexChang/vo/system/RouterVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-util/src/main/java/com/AlexChang/common/result/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/AlexChang/common/result/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/AlexChang/common/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/AlexChang/common/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/controller/SysRoleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/service/SysUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/service/impl/SysRoleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/AlexChang/auth/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +28,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="mybatis-mapper" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="mybatis-mapper" />
       </list>
     </option>
   </component>
@@ -76,7 +79,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Alex/ideaWorkSpace/javaAtguigu/office-oa-parent/office-oa-parent/model/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Alex/ideaWorkSpace/javaAtguigu/office-oa-parent/office-oa-parent/service-oa/src/main/resources/process&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -84,109 +87,122 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;9e8e90fd9deb19ca70adff9666833ee8&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8a604bca848cb439ecf3b1c0c25b4f2b&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Alex\ideaWorkSpace\javaAtguigu\office-oa-parent\office-oa-parent\service-oa\src\main\resources\process" />
+      <recent name="D:\Alex\ideaWorkSpace\javaAtguigu\office-oa-parent\office-oa-parent\service-oa\src\main\resources\com\AlexChang\auth\mapper" />
+      <recent name="D:\Alex\ideaWorkSpace\javaAtguigu\office-oa-parent\office-oa-parent\service-oa\src\main\resources\com.AlexChang.auth.mapper" />
+      <recent name="D:\Alex\ideaWorkSpace\javaAtguigu\office-oa-parent\office-oa-parent\service-oa\src\main\resources" />
       <recent name="D:\Alex\ideaWorkSpace\javaAtguigu\office-oa-parent\office-oa-parent\model\src\main\resources" />
-      <recent name="D:\Alex\ideaWorkSpace\javaAtguigu\office-oa-parent\office-oa-parent\common\service-util\src\main\java\com\AlexChang\common\exception" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Alex\ideaWorkSpace\javaAtguigu\office-oa-parent\office-oa-parent\service-oa\src\main\resources\com.AlexChang.auth.mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.AlexChang.security.custom" />
       <recent name="com.AlexChang.auth" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JwtHelper">
-    <configuration name="JwtHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AlexChang.common.jwt.JwtHelper" />
-      <module name="common-util" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.AlexChang.common.jwt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDemo01.deleteId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProcessTestDemo1.findPendingTaskList">
+    <configuration name="ProcessTestDemo1.deployProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-oa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.AlexChang.auth.*" />
+          <option name="PATTERN" value="com.AlexChang.auth.activiti.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.AlexChang.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.AlexChang.auth.TestDemo01" />
-      <option name="METHOD_NAME" value="deleteId" />
+      <option name="PACKAGE_NAME" value="com.AlexChang.auth.activiti" />
+      <option name="MAIN_CLASS_NAME" value="com.AlexChang.auth.activiti.ProcessTestDemo1" />
+      <option name="METHOD_NAME" value="deployProcess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDemo01.testQuery2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProcessTestDemo1.deployProcess01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-oa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.AlexChang.auth.*" />
+          <option name="PATTERN" value="com.AlexChang.auth.activiti.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.AlexChang.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.AlexChang.auth.TestDemo01" />
-      <option name="METHOD_NAME" value="testQuery2" />
+      <option name="PACKAGE_NAME" value="com.AlexChang.auth.activiti" />
+      <option name="MAIN_CLASS_NAME" value="com.AlexChang.auth.activiti.ProcessTestDemo1" />
+      <option name="METHOD_NAME" value="deployProcess01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDemo02.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProcessTestDemo1.findPendingTaskList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-oa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.AlexChang.auth.*" />
+          <option name="PATTERN" value="com.AlexChang.auth.activiti.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.AlexChang.auth" />
-      <option name="MAIN_CLASS_NAME" value="com.AlexChang.auth.TestDemo02" />
-      <option name="METHOD_NAME" value="getAll" />
+      <option name="PACKAGE_NAME" value="com.AlexChang.auth.activiti" />
+      <option name="MAIN_CLASS_NAME" value="com.AlexChang.auth.activiti.ProcessTestDemo1" />
+      <option name="METHOD_NAME" value="findPendingTaskList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ProcessTestDemo1.startProcessInstance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service-oa" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.AlexChang.auth.ServiceAuthApplication" />
-      <option name="VM_PARAMETERS" value="--add-opens java.base/java.util=ALL-UNNAMED" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.AlexChang.auth.*" />
+          <option name="PATTERN" value="com.AlexChang.auth.activiti.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.AlexChang.auth.activiti" />
+      <option name="MAIN_CLASS_NAME" value="com.AlexChang.auth.activiti.ProcessTestDemo1" />
+      <option name="METHOD_NAME" value="startProcessInstance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProcessTestDemo1.startProcessInstance01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="service-oa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.AlexChang.auth.activiti.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.AlexChang.auth.activiti" />
+      <option name="MAIN_CLASS_NAME" value="com.AlexChang.auth.activiti.ProcessTestDemo1" />
+      <option name="METHOD_NAME" value="startProcessInstance01" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JwtHelper" />
-      <item itemvalue="JUnit.TestDemo01.deleteId" />
-      <item itemvalue="JUnit.TestDemo01.testQuery2" />
-      <item itemvalue="JUnit.TestDemo02.getAll" />
-      <item itemvalue="Spring Boot.ServiceAuthApplication" />
+      <item itemvalue="JUnit.ProcessTestDemo1.deployProcess" />
+      <item itemvalue="JUnit.ProcessTestDemo1.deployProcess01" />
+      <item itemvalue="JUnit.ProcessTestDemo1.findPendingTaskList" />
+      <item itemvalue="JUnit.ProcessTestDemo1.startProcessInstance" />
+      <item itemvalue="JUnit.ProcessTestDemo1.startProcessInstance01" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JwtHelper" />
-        <item itemvalue="Spring Boot.ServiceAuthApplication" />
-        <item itemvalue="JUnit.TestDemo02.getAll" />
-        <item itemvalue="JUnit.TestDemo01.testQuery2" />
-        <item itemvalue="JUnit.TestDemo01.deleteId" />
+        <item itemvalue="JUnit.ProcessTestDemo1.findPendingTaskList" />
+        <item itemvalue="JUnit.ProcessTestDemo1.startProcessInstance01" />
+        <item itemvalue="JUnit.ProcessTestDemo1.deployProcess01" />
+        <item itemvalue="JUnit.ProcessTestDemo1.startProcessInstance" />
+        <item itemvalue="JUnit.ProcessTestDemo1.deployProcess" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +239,15 @@
       <workItem from="1696854865547" duration="786000" />
       <workItem from="1696906719172" duration="11774000" />
       <workItem from="1696988167440" duration="6216000" />
-      <workItem from="1697074796083" duration="13758000" />
+      <workItem from="1697074796083" duration="14326000" />
+      <workItem from="1697183761783" duration="4517000" />
+      <workItem from="1697254920429" duration="6642000" />
+      <workItem from="1697338994861" duration="15744000" />
+      <workItem from="1697420340059" duration="10630000" />
+      <workItem from="1697534141648" duration="153000" />
+      <workItem from="1697543831392" duration="1342000" />
+      <workItem from="1697606039307" duration="13643000" />
+      <workItem from="1697684367223" duration="8591000" />
     </task>
     <task id="LOCAL-00001" summary="0909">
       <created>1694265985870</created>
@@ -267,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696687163764</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1012">
+      <created>1697115754248</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697115754248</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +322,11 @@
     <MESSAGE value="0914" />
     <MESSAGE value="0916" />
     <MESSAGE value="1007" />
-    <option name="LAST_COMMIT_MESSAGE" value="1007" />
+    <MESSAGE value="1012" />
+    <option name="LAST_COMMIT_MESSAGE" value="1012" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -15,11 +15,11 @@ import lombok.Getter;
 public enum ResultCodeEnum {
 
     SUCCESS(200,"成功"),
-    FAIL(201,"失敗")
+    FAIL(201,"失敗"),
 //    SERVICE_ERROR(2012,"服務異常"),
-//    LOGIN_ERROR(204,"數據異常"),
+    LOGIN_ERROR(204,"認證失敗")
 //    LOGIN_AUTH(208,"未登入"),
-//    PERMISSION(209,"沒有權限")
+    //PERMISSION(209,"沒有權限")
     ;
 
     private Integer code;

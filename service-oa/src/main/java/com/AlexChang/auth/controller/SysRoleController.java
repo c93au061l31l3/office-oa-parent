@@ -17,6 +17,7 @@ import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.http.MediaType;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -67,6 +68,7 @@ public class SysRoleController {
     }
 
     //條件分頁查詢
+    @PreAuthorize("hasAuthority('bnt.sysRole.list')")
     @Operation(summary = "條件分頁查詢")
     @GetMapping("/{page}/{limit}") //page:當前頁，limit:每頁顯示數，SysRoleQueryVo:條件對象
     public Result pageQueryRole(@PathVariable Long page,
@@ -92,6 +94,7 @@ public class SysRoleController {
     }
 
     //添加角色
+    @PreAuthorize("hasAuthority('bnt.sysRole.add')")
     @Operation(summary = "添加角色")
     @PostMapping(value = "/save")
     public Result save(@RequestBody SysRole role){ //@RequestBody : 參數通過請求體並以JSON格式傳入
@@ -106,6 +109,7 @@ public class SysRoleController {
     }
 
     //根據id查詢
+    @PreAuthorize("hasAuthority('bnt.sysRole.list')")
     @Operation(summary = "根據id查詢")
     @GetMapping("/get/{id}")
     public Result get(@PathVariable Long id){
@@ -114,6 +118,7 @@ public class SysRoleController {
     }
 
     //修改角色-完整版
+    @PreAuthorize("hasAuthority('bnt.sysRole.update')")
     @Operation(summary = "修改角色")
     @PutMapping("/update")
     public Result update(@RequestBody SysRole role){
@@ -126,6 +131,7 @@ public class SysRoleController {
     }
 
     //根據id刪除
+    @PreAuthorize("hasAuthority('bnt.sysRole.remove')")
     @Operation(summary = "根據id刪除")
     @DeleteMapping("/remove/{id}")
     public Result remove(@PathVariable Long id){
@@ -138,6 +144,7 @@ public class SysRoleController {
     }
 
     //批量刪除
+    @PreAuthorize("hasAuthority('bnt.sysRole.remove')")
     @Operation(summary = "批量刪除")
     @DeleteMapping("/batchRemove")
     public Result batchRemove(@RequestBody List<Long> idList){  //前端用數組[]傳遞
