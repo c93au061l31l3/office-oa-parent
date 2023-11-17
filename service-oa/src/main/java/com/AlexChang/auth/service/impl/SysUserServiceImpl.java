@@ -3,9 +3,13 @@ package com.AlexChang.auth.service.impl;
 import com.AlexChang.auth.mapper.SysUserMapper;
 import com.AlexChang.auth.service.SysUserService;
 import com.AlexChang.model.system.SysUser;
+import com.AlexChang.security.custom.LoginUserInfoHelper;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * ClassName:SysUserServiceImpl
@@ -38,5 +42,16 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         SysUser sysUser = baseMapper.selectOne(wrapper);
 
         return sysUser;
+    }
+
+    @Override
+    public Map<String, Object> getCurrentUser() {
+
+        SysUser sysUser = baseMapper.selectById(LoginUserInfoHelper.getUserId());
+        Map<String,Object> map = new HashMap<>();
+        map.put("name",sysUser.getName());
+        map.put("phone",sysUser.getPhone());
+
+        return map;
     }
 }

@@ -29,8 +29,8 @@ public class JwtHelper {
                 .claim("userId", userId) //设置主体部分
                 .claim("username", username) //设置主体部分
                 //签名部分
-                .signWith(SignatureAlgorithm.HS512, tokenSignKey)
-                .compressWith(CompressionCodecs.GZIP)
+                .signWith(SignatureAlgorithm.HS512, tokenSignKey) //根據key與算法進行加密
+                .compressWith(CompressionCodecs.GZIP) //壓縮token
                 .compact();
         return token;
     }
@@ -65,7 +65,7 @@ public class JwtHelper {
     }
 
     public static void main(String[] args) {
-        String token = JwtHelper.createToken(1L, "admin");
+        String token = JwtHelper.createToken(4L, "li4");
         System.out.println(token);
         System.out.println(JwtHelper.getUserId(token));
         System.out.println(JwtHelper.getUsername(token));

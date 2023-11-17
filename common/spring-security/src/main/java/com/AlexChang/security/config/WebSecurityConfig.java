@@ -3,6 +3,7 @@ package com.AlexChang.security.config;
 import com.AlexChang.security.custom.CustomMd5PasswordEncoder;
 import com.AlexChang.security.filter.TokenAuthenticationFilter;
 import com.AlexChang.security.filter.TokenLoginFilter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,6 +21,11 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+
+import java.util.List;
 
 
 /**
@@ -34,6 +40,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 @EnableWebSecurity //@EnableWebSecurity是开启SpringSecurity的默认行为
 //@EnableGlobalMethodSecurity(prePostEnabled = true)
 @EnableMethodSecurity(prePostEnabled = true) //
+@Slf4j
 public class WebSecurityConfig {
 
     @Autowired
@@ -85,12 +92,12 @@ public class WebSecurityConfig {
         return http.build();
     }
 
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth
-                .userDetailsService(userDetailsService)
-                .passwordEncoder(customMd5PasswordEncoder);
-    }
+//    @Autowired
+//    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+//        auth
+//                .userDetailsService(userDetailsService)
+//                .passwordEncoder(customMd5PasswordEncoder);
+//    }
 
 
 //    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -113,5 +120,26 @@ public class WebSecurityConfig {
     public WebSecurityCustomizer webSecurityCustomizer() {
         return (web) -> web.ignoring().requestMatchers("/favicon.ico","/swagger-resources/**", "/webjars/**", "/v3/**", "/swagger-ui.html/**", "/doc.html");
     }
+
+    /**
+     *跨域资源配置
+     */
+//    @Bean
+//    public CorsConfigurationSource corsConfigurationSource()
+//    {
+//        final CorsConfiguration configuration = new CorsConfiguration();
+//
+//        //此处发现如果不加入自己的项目地址，会被拦截。
+//        //configuration.setAllowedOriginPatterns(List.of("http://localhost:8800"));
+//        configuration.setAllowedOriginPatterns(List.of("http://localhost:9528"));
+//        configuration.setAllowedMethods(List.of("GET", "POST", "OPTIONS", "DELETE", "PUT", "PATCH"));
+//        configuration.setAllowedHeaders(List.of("Access-Control-Allow-Origin", "X-Requested-With", "Origin", "Content-Type", "Accept", "Authorization"));
+//        configuration.setAllowCredentials(true);
+//
+//        final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+//        source.registerCorsConfiguration("/**", configuration);
+//
+//        return source;
+//    }
 
 }

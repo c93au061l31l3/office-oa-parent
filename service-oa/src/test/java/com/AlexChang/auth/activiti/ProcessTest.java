@@ -13,7 +13,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.activiti.engine.task.Task;
 
+import java.io.InputStream;
 import java.util.List;
+import java.util.zip.ZipInputStream;
 
 /**
  * ClassName:ProcessTest
@@ -45,12 +47,32 @@ public class ProcessTest {
     public void deployProcess(){
         //流程部屬
         Deployment deploy = repositoryService.createDeployment()
+                //加載類路徑下的資源
                 .addClasspathResource("process/qingjia.bpmn20.xml")
                 .addClasspathResource("process/qingjia.png")
-                .name("請假申請流程")
+                .name("請假申請流程10")
                 .deploy();
-        System.out.println(deploy.getId());
+        System.out.println("------------------"+deploy.getId());
         System.out.println(deploy.getName());
+    }
+
+    @Test
+    public void deployProcessByZip() {
+        // 定义zip输入流
+        InputStream inputStream = this
+                .getClass()
+                .getClassLoader()
+                .getResourceAsStream(
+                        "process/qingjia.zip");
+        ZipInputStream zipInputStream = new ZipInputStream(inputStream);
+
+        // 流程部署
+        Deployment deployment = repositoryService.createDeployment()
+                .addZipInputStream(zipInputStream)
+                .name("请假申请流程")
+                .deploy();
+        System.out.println("流程部署id：" + deployment.getId());
+        System.out.println("流程部署名称：" + deployment.getName());
     }
 
     //啟動一個流程實例

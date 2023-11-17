@@ -42,7 +42,7 @@ public class SysMenuServiceImpl extends ServiceImpl<SysMenuMapper, SysMenu> impl
     @Override
     public List<SysMenu> findNodes() {
 
-        //1查詢所有燦單數據
+        //1查詢所有菜單數據
         List<SysMenu> sysMenuList = baseMapper.selectList(null);
 
         //2構建成樹型結構

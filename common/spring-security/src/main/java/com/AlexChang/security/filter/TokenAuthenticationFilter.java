@@ -13,6 +13,7 @@ import com.AlexChang.common.jwt.JwtHelper;
 import com.AlexChang.common.result.ResponseUtil;
 import com.AlexChang.common.result.Result;
 import com.AlexChang.common.result.ResultCodeEnum;
+import com.AlexChang.security.custom.LoginUserInfoHelper;
 import com.alibaba.fastjson.JSON;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -53,6 +54,10 @@ public class TokenAuthenticationFilter extends OncePerRequestFilter {
             chain.doFilter(request, response);
             return;
         }
+//        if("/admin/process/processType/uploadProcessDefinition".equals(request.getRequestURI())) {
+//            chain.doFilter(request, response);
+//            return;
+//        }
 
         UsernamePasswordAuthenticationToken authentication = getAuthentication(request);
         if(null != authentication) {
@@ -72,6 +77,10 @@ public class TokenAuthenticationFilter extends OncePerRequestFilter {
             String username = JwtHelper.getUsername(token);
             logger.info("username:"+username);
             if (!StringUtils.isEmpty(username)) {
+
+                //將當前用戶信息放入ThreadLocal
+                LoginUserInfoHelper.setUserId(JwtHelper.getUserId(token));
+                LoginUserInfoHelper.setUsername(username);
 
                 //通過username從redis獲取權限數據
                 String authString = (String) redisTemplate.opsForValue().get(username);

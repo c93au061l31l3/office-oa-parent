@@ -15,6 +15,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+
 /**
  * ClassName:SysUserController
  * Description:
@@ -27,6 +29,7 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "用戶管理接口")
 @RestController
 @RequestMapping("/admin/system/sysUser")
+@CrossOrigin
 public class SysUserController {
 
     @Autowired
@@ -111,6 +114,18 @@ public class SysUserController {
     public Result updateStatus(@PathVariable Long id, @PathVariable Integer status) {
         service.updateStatus(id,status);
         return Result.ok();
+    }
+
+    /**
+     * 獲取當前用戶基本信息
+     * @return
+     */
+    @GetMapping("/getCurrentUser")
+    public Result getCurrentUser(){
+
+        Map<String,Object> map = service.getCurrentUser();
+
+        return Result.ok(map);
     }
 
 }

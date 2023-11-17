@@ -4,6 +4,7 @@ import com.AlexChang.model.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 /**
@@ -17,28 +18,34 @@ import lombok.Data;
 
 @Data
 //@ApiModel(description = "ProcessRecord")
+@Schema(description = "ProcessRecord")
 @TableName("oa_process_record")
 public class ProcessRecord extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
 
     //@ApiModelProperty(value = "審查流程id")
+    @Schema(description = "審查流程id")
     @TableField("process_id")
     private Long processId;
 
     //@ApiModelProperty(value = "審查描述")
+    @Schema(description = "審查描述")
     @TableField("description")
     private String description;
 
     //@ApiModelProperty(value = "狀態")
+    @Schema(description = "狀態")
     @TableField("status")
     private Integer status;
 
     //@ApiModelProperty(value = "操作用戶id")
+    @Schema(description = "操作用戶id")
     @TableField("operate_user_id")
     private Long operateUserId;
 
     //@ApiModelProperty(value = "操作用戶")
+    @Schema(description = "操作用戶")
     @TableField("operate_user")
     private String operateUser;
 }

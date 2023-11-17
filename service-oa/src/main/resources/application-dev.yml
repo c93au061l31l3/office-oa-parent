@@ -3,6 +3,7 @@ server:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #查看日誌
+#  mapper-locations: classpath:com/AlexChang/*/mapper/xml/*.xml
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
@@ -13,6 +14,8 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+  main:
+    allow-circular-references: true
 
   data:
     redis:
@@ -43,4 +46,7 @@ spring:
     history-level: full
     #校验流程文件，默认校验resources下的process 文件夹的流程文件
     check-process-definitions: true
+
+
+
 
