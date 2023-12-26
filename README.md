@@ -11,7 +11,7 @@
 
 ## 安裝&使用
 1. 下載此專案(需要前端與後端)
-2. 根據office-oa.sql創建資料庫，修改application-dev.yml內的連接設定(資料庫連接資訊等...)
+2. 根據office-oa.sql創建資料庫，修改service-oa/src/main/resources/application-dev.yml內的連接設定(資料庫連接資訊等...)
 3. 啟動redis-server
 4. 後端直接啟動
 5. 前端以 npm run dev 啟動
